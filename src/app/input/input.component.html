@@ -1,0 +1,11 @@
+<div class="input" contenteditable="true">
+		<app-span
+			*ngFor="let section of sections; let index = index ;"
+			[type]="section.type"
+			[textStart]="section.text"
+		></app-span>
+</div>
+<pre>
+	{{sections |json}}
+</pre>
+<app-name-list (onMarkPerson)="addNewMark($event)"></app-name-list>

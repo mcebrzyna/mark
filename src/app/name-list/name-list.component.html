@@ -1,0 +1,3 @@
+<ul #list *ngIf="showed">
+	<li *ngFor="let person of persons" [class.active]="person === activePerson">{{ person.name + ' ' + person.surname }}</li>
+</ul>
